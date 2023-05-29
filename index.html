@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicketPocket</title>
+  <link href="./style.css" rel="stylesheet">
+  <link href="./normalize.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="bg">
+      <!-- 해더 영역 -->
+      <header class="header">
+        <a class="back-page-button" href="#"> < </a>
+        <div class="service-title">T.P</div>
+        <img class="hambuger-menu" src="img/nor.svg">
+      </header>
+
+      <!-- 아티클 영역(그외 모든 컨텐츠) -->
+      <article class="article">
+        <!-- 좌측 컨텐츠(정보) -->
+        <div class="left-content">
+          <!-- 좌상단 컨텐츠 -->
+          <div class="left-top-content">
+            <!-- 관람날짜 & 타이틀 -->
+            <div class="date-title">
+              <h5 class="main-date">2023. 04. 28</h5>
+              <h1 class="main-title">뮤지컬 영웅 2023</h1>
+            </div>
+
+            <!-- 별점 -->
+            <!-- <div class="star-score-set">
+              <img class="score-icon" src="img/star_set_n.svg">
+              <span class="score-number">0.0</span>
+            </div> -->
+
+            <div class="rating_box">
+              <div class="rating">
+                ★★★★★
+                <span class="rating_star">★★★★★</span>
+                <input type="range" value="1" step="1" min="0" max="10">
+              </div>
+            </div>
+
+            <!-- 명언 -->
+            <h3 class="famous-line">"하늘이시여, 도와주소서, 우리 뜻 이루도록"</h3>
+          </div>
+          <!-- 좌하단 컨텐츠 -->
+          <div class="left-bottom-content">
+            <!-- 좌하단 박스 사이즈 -->
+            <div class="left-bottom-box">
+              <!-- 같이 본 사람 -->
+              <div class="viewer-section">
+                <img class="viewer-icon" src="Img/icon.svg">
+                <div class="viewer-name round-design">장종호</div>
+                <div class="viewer-name round-design">신희송</div>
+              </div>
+              <!-- 관람 날짜 & 날씨 -->
+              <div class="viewed-date-section">
+                <img class="viewed-icon" src="Img/icon.svg">
+                <div class="viewed-date round-design">2023.04.28</div>
+                <img class="viewed-weather-icon" src="Img/icon.svg">
+              </div>
+              <!-- 관람 장소 -->
+              <div class="palce-seat-section">
+                <div class="place-section">
+                  <img class="place-icon" src="Img/icon.svg">
+                  <div class="palce-name round-design">블루스퀘어 신한카드홀</div>
+                </div>
+                <!-- 좌석 -->
+                <div class="seat-section">
+                  <img class="seat-icon" src="Img/icon.svg">
+                  <div class="seat-number round-design">VIP 1층 11열 022,023번</div>
+                </div>
+              </div>
+              <!-- 내 리뷰 -->
+              <div class="my-review-section">
+                <div class="review-set">
+                  <img class="review-icon" src="Img/icon.svg">
+                  <span class="review-text">
+                    한 인간으로서 안중근 의사가 거사를 치르기 전 느꼈을 죽음의 공포와 조국에 대한 그리움을 생각해볼 수 있었다. 특히 독립운동을 돕던 동료의 죽음과 희생에 ...
+                  </span>
+                </div>
+                <a class="read-more" href="#">더보기 ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 오른쪽 컨텐츠(포스터) -->
+        <div class="right-content">
+          <div class="right-poster">
+            <img class="poster-img" src="img/main-poster.jpg" alt="영웅 포스터">
+            <a class="ticket" href="#"> 티켓 보기</a>
+          </div>
+          <a class="work-details" href="https://tickets.interpark.com/goods/23001653" target="_blank">작품 정보 보기 ></a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
